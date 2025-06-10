@@ -1,13 +1,12 @@
 <div align="center">
 	<p>
-		<img alt="Thoughtworks Logo" src="https://raw.githubusercontent.com/ThoughtWorks-DPS/static/master/thoughtworks_flamingo_wave.png?sanitize=true" width=350 />
-    <br />
-		<img alt="DPS Title" src="https://raw.githubusercontent.com/ThoughtWorks-DPS/static/master/EMPCPlatformStarterKitsImage.png" />
+		<img alt="Thoughtworks Logo" src="https://raw.githubusercontent.com/twplatformlabs/static/master/psk_banner.png" width=800 />
 	</p>
+	<h3>Documentation for the Open Source Resources within Thoughtworks Platofrm Labs Materials</h3>
 </div>
 <br />
 
-The EMPC Platform Starter Kits demonstrate the software building blocks for delivering a modern Engineering Platform inside the Enterprise, providing a self-serve, product experience to software development teams (the internal customers).   
+The Thoughtworks EMPC Platform Starter Kits demonstrate software building blocks for delivering modern engineering platforms and improving developer effectiveness.   
 
 #### 1. Introduction   
 
