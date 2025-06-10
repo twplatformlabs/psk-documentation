@@ -1,8 +1,6 @@
 <div align="center">
 	<p>
-		<img alt="Thoughtworks Logo" src="https://raw.githubusercontent.com/ThoughtWorks-DPS/static/master/thoughtworks_flamingo_wave.png?sanitize=true" width=200 />
-    <br />
-		<img alt="DPS Title" src="https://raw.githubusercontent.com/ThoughtWorks-DPS/static/master/EMPCPlatformStarterKitsImage.png?sanitize=true" width=350/>
+		<img alt="Thoughtworks Logo" src="https://raw.githubusercontent.com/twplatformlabs/static/master/psk_banner.png" width=500 />
 	</p>
   <h3>1.1 Concepts</h3>
 </div>
@@ -10,27 +8,27 @@
 
 ![bootstrap](https://img.shields.io/badge/document-EarlyDraft-yellow.svg?style=for-the-badge&logo=markdown)  
 
-#### 1.1.1 Engineering Platforms
+The Thoughtworks Platform labs OSS resources are collectively targeted at improving developer effectiveness. While this is a broad topic that realistically covers everything from organizational design to engineering culture, a central and highly visible attribute among high performing organizations is the use of an Engineering Platform to create a seemless product experience around the shared development resources.   
 
-The EMPC labs' OSS resources are related to building a modern engineering platform, consumed by internal customers, providing an independently useable, product experience. In the past we have also called these as Delivery Infrastructure products.  
+We refer to these resources collectively as **Platform Starter Kits**.  
 
-We refer to these resources collectively as **Platform Starter Kits**.
+#### 1.1.1 Engineering Platform
 
-> An Engineer Platform is “a foundation of self-service APIs, tools, services, knowledge, and support which are arranged as a compelling internal product. Autonomous delivery teams can make use of the platform to deliver product features at a higher pace, with reduced coordination.” - Evan Bottcher 
+> An Engineer Platform is “a foundation of self-service APIs, tools, services, knowledge, and support which are arranged as a compelling internal product. Autonomous delivery teams can make use of the platform to deliver product features at a higher pace, [higher quality, and] with reduced coordination.” - Evan Bottcher  
+
+An engineering platform, when viewed as a unified product, brings together all the resources developers need to do their jobs. It organizes these resources around a software-defined platform to dramatically reduce the need for the members of teams across the company to constantly coordinate and communicate with one another. 
 
 #### 1.1.2 Product Experience
 
-_Product Experience_ refers to a high-quality, self-serve, consumer experience when using platform capabilities. 
+_Product Experience_ refers to a high quality, self-serve, consumer oriented experience such as most of us have come to expect from highly successful SaaS solutions. AS we might expect, much of platform engineering involves the effective integration of such third-party SaaS solutions.  
 
-This is analogous to the experience we've come to expect from the many SaaS providers now offering developer tools.  
-
-Let's use GitHub as an example. In a well-implemented enterprise adoption of GitGub, as a Developer, knowing the url of the company's organization, I expect to be able to login using my company SSO credentials. I expect that I can interact with git services on-demand, using as much `git` as I need, whenever I need it. I can readily create repos, edit code, delete repos, and in general do all the git-things without needing to ask someone else to do these necessary things on my behalf. I can use the git cli, or I can use the UI wherever it makes sense for my tasks. And I expect to be able to directly call the github API to fully automate whatever behavior I find valuable. If I have to call someone at GitHub, or open a ticket, it should only be when something is broken on their end. And I also expect GitHub to be actively developing the product. As a valued customer, I want to be able to submit feature requests and otherwise influence the product roadmap. But from the start, the functionality available offers significant value and in those places where I wish it could do more - I can adopt my own work-arounds. There is adequaete documentation (text, video, etc) such that it is completely reasonable to expect that I can discover and make full use of GitHub in an independent and self-directed manner.  
+Let's use GitHub as an example. In a well-implemented implementation, I expect to be able to login using my company SSO credentials. I expect that I can interact with git services on-demand, using as much `git` as I need, whenever I need it. I can readily create repos, edit code, delete repos, and in general do all the git-things without needing to ask someone else to do these necessary things on my behalf. I can use the git cli, or I can use the UI, whichever makes sense for my tasks. And I expect to be able to directly call the github API to fully automate recurring behavior I find valuable. If I have to call someone at GitHub, or open a ticket, it should only be when something is broken on their end. And I also expect GitHub to be actively developing the product. As a valued customer, I want to be able to submit feature requests and otherwise influence the product roadmap. But from the start, the functionality available offers significant value and in those places where I wish it could do more - I can adopt my own work-arounds. There is adequate documentation (text, video, etc) such that it is completely reasonable to expect that I can discover and make full use of GitHub in an independent and self-directed manner.  
 
 This is the kind of `product` experience that goes into delivering an Engineering Platform.  
 
-Providing a product experience means removing the organizational lead-time planning and engineering friction normally associated with deploying and managing software. 
+Providing a product experience results in removing the organizational lead-time planning and engineering friction normally associated with deploying and managing software.  
 
-What do we mean by _lead-time planning and engineering friction_? 
+What do we mean by _lead-time planning and engineering friction_?  
 
 **Lead-Time Planning** 
 
@@ -40,14 +38,14 @@ Typical examples may include needing to schedule-ahead requests with:
 * an IAM Team - to create a machine account or custom roles so I can access and customize technologies.
 * a DNS Team - to create DNS entries needed by my service
 * an SSO team - to gain access to each of the various, standard developer resources such as git repositories, pipeline tools, or static code analysis tools. Or to coordinate accurate RBAC within such tools for myself or my team. 
-* a separate DevOps team - to make changes to my pipeline, request additional compute resources, gain access to a production environment during an outage or direct members of the DevOps to perform outage responses on my behalf. 
+* a separate DevOps team - to make changes to my pipeline, request additional compute resources, gain access to a production environment during an outage or directing members of the DevOps team to perform outage responses on my behalf. 
 * a Monitoring team - to gain access to infrequently used logs or metrics or to request the creation of monitors, alerts, or dashboards. 
 
 And this is definitely the shortest of lists. 
 
-A dev team will collectively spend significat hours trying to get needed changes scheduled ahead of the dependent stories, time taken away from delivering business value. As it is not possible to adequately anticipate everything before encountering the situationally specific need, nor predict how long these other teams may need to complete such tasks therefore work is routinely blocked. Yet, organizations are under tremendous delivery pressure and set aggressive delivery dates around backlogs running months and even years into the future. The result is not only blocked stories pilling up across team backlogs, but also teams are continuously re-prioritizing work based not on value but on which stories are not blocked this sprint.  
+Developers collectively spend an inordinate hours trying to get needed changes scheduled ahead of the dependent stories, time taken away from delivering business value. As it is not possible to adequately anticipate everything before encountering the situationally specific need, nor predict how long these other teams may need to complete such tasks, therefore work is routinely blocked. Yet organizations are under tremendous delivery pressure and set aggressive delivery dates around backlogs running months and even years into the future. The result is not only blocked stories pilling up across team backlogs, but also teams are continuously re-prioritizing work based not on value but on which stories are not blocked this sprint.  
 
-_Note. The inter-team dependencies in focus here are not the coordination needs that arise from creating multiple business services and capabilities that may have interdependent outcome goals. While poorly managed domain boundaries amongst business capability teams are also a source of planning challenges and friction, it is the traditional IT and technology silos that are at the heart of engineering platform products._
+_Note. While it is the traditional IT and technology silos that are commonly thought of as being in view when defining the scope of an engineering platform, poorly managed domain boundaries amongst business capability teams are also a source of planning challenges and friction. The architecture of your platform can be a significant influencer in setting team boundaries in general._  
 
 **Engineering Friction** 
 
@@ -55,19 +53,19 @@ Engineering friction is the ubiquitous result of the batch-and-queue assembly li
 
 Multiple interactions with many such teams increase the communication challenges, additionally contributing to the variable cycle times and frequent re-work.  
 
-#### 1.1.3 Use of SaaS versus Self-Managed capabilities  
+#### 1.1.3 Software Defined
 
-Throughout the Platform Starter Kit, you will see extensive use of SaaS-based development tools and IaaS providers. This is intentional and recommended. 
+Software Defined Infrastructure means:  
+Use of modern SDLC practices and infrastructure frameworks in the continuous integration and delivery of systems that are resilient, secure, observable, and capable of change at scale (primarily meaning the "scale" of freqeuncy of change but including the overall scale of the resources managed).  
 
-While necessary for delivering high-quality customer experiences in software, none of the tools and technologies used in the development, release, operation, and maintenance of software are themselves strategic differentiators. 
+| Software Defined | vs | Not Quite |
+|------------------|----|-----------|
+| Entire Infrastructure deployed using diffable, versioned source Code and 3rd party artifacts| | Varying amounts of manual configuration |
+| Engineered “as software” (evolutionary, tdd, dry, static code analysis, …) | | Engineered mechanically (attempt to pre-architect for all possible outcomes, copy/paste scripts between environments, human inspection for correctness) |
+| Orchestrated by domain bounded, heterogeneous pipelines | | Varying amounts of manual orchestration, monolithic infrastructure code |
+| Resiliency, security, observability are an attribute of every domain | | DR and monitoring are functionally siloed and optimized, security added on after the fact |
 
-Organizations routinely under estimate the cost of self-managing COTS, development-related services in particular, even going so far as to use poorly-suited but familiar tools like Jenkins. I.e., it is frequently the case that an honest and realistic assessment of actual cost reveals self-managed Jenkins as the most expensive component in a dev toolchain. 
-
-Using secure and well-architected SaaS development tools is consistently one of the most accelerating and cost-saving strategies available. And not only during the implementation phase but over the entire life of the platform. 
-
-Even if you have the financial resources to comfortably afford the increased costs of self-managed development and maintenance of non-differentiated capabilities, the opportunity cost alone negates any perceived value and cannot be recovered later through additional investment. Invest in creating and maintaining the capabilities that are your company's strategic differentiators amongst the competition. New business building is a defining characteristic of digitally successful companies. 
-
-#### 1.1.4 Evolutionary Architecture and agility
+#### 1.1.4 Evolutionary Architecture
 
 Friction, rigidity, and instability are the results of organizational and architectural decisions. People often assume architecture is intrinsically hard to change. But what if we design and architect systems to be capable (affordable, timely) of continuous incremental change over time? 
 
@@ -76,29 +74,29 @@ Friction, rigidity, and instability are the results of organizational and archit
 **Adopt** 
 
 * Evolutionary architecture as a foundational practice.
-* Commit to architecture decisions only after comparative experimentation and based on outcomes of working implementations for real development deliverables.
+* Commit to architecture decisions only after comparative experimentation based on outcomes of working implementations for real development deliverables.
 * Suitability to IaC lifecycle and domain-bounded implementation is a prerequisite for all tools and technologies.
-* Apply software lifecycle practice to infrastructure code, e.g., test-driven development, continuous integration, pipelines
-* Rigorously architect dimensions for change both in the selection of tools and technologies as well as in their implementation, e.g., use small or narrowly focused tools that are excellent at one thing and inter-operate easily (loosely copuled) with other technologies rather than all-in-one products that attempt to do many different things. Have ease of replacement in mind.
+* Apply software lifecycle practice to infrastructure code, e.g., test-driven development, continuous integration, pipeline orchestration
+* Rigorously architect dimensions of change both in the selection of tools and technologies as well as in their implementation, e.g., use small or narrowly focused tools that are excellent at one thing and inter-operate easily (loosely copuled) with other technologies rather than all-in-one products that attempt to do many different things (poorly). Have ease of replacement in mind.
 * Access to infrastructure is self-serve and on-demand. Either a development team self-manages their own infrastructure, or dedicated infrastructure teams deliver a self-serve interface to development teams.
 
 **Avoid** 
 
 * Required use of pre-defined solutions regardless of architectural suitability, e.g., must use self-managed technologies from a single vendor (we are an Oracle shop), all development must be in the same programming language (only Java permitted).
-* Purchasing or otherwise committing to architectural solutions based solely on website documentation or sales-engineering assurances
+* Purchasing or otherwise committing to architectural solutions based solely on website documentation or sales-engineering assurances.
 * Functionally isolating technology or tool decisions away from the primary users or implementors.
 
-#### 1.1.5 A Definition of Software Defined
+#### 1.1.5 Use of SaaS versus Self-Managed capabilities  
 
-Software Defined Infrastructure means:  
-Use of modern SDLC practices and infrastructure frameworks in the continuous integration and delivery of systems that are resilient, secure, observable, and capable of change at scale.  
+Throughout the Platform Starter Kits, you will see extensive demonstration of SaaS-based development tools and IaaS providers. This is intentional and recommended. (The practice is recommended, not necessarily the particular tools though they are effective examples.)  
 
-| Software Defined | vs | Not Quite |
-|------------------|----|-----------|
-| Entire Infrastructure deployed using diffable, versioned source Code and 3rd party artifacts| | Varying amounts of manual configuration |
-| Engineered “as software” (evolutionary, tdd, dry, static code analysis, …) | | Engineered mechanically (attempt to pre-architect for all possible outcomes, copy/paste scripts between environments, human inspection for correctness) |
-| Orchestrated by domain bounded, heterogeneous pipelines | | Varying amounts of manual orchestration, monolithic infrastructure code |
-| Resiliency, security, observability are an attribute of every domain | | DR and monitoring are functionally siloed and optimized, security added on after the fact |
+While necessary for delivering high-quality customer experiences in software, none of the tools and technologies used in the development, release, operation, and maintenance of software are themselves strategic differentiators.  
+
+Organizations routinely under-estimate the cost of self-managing COTS, development-related services in particular, even going so far as to use poorly-suited but familiar tools like Jenkins. I.e., it is frequently the case that an honest and realistic assessment of actual cost reveals self-managed Jenkins as the most expensive component in a dev toolchain.  
+
+Using secure and well-architected SaaS development tools is consistently one of the most accelerating and cost-saving strategies available. And not only during the implementation phase but over the entire life of the platform.  
+
+Even if you have the financial resources to comfortably afford the increased costs of self-managed development and maintenance of non-differentiated capabilities, the opportunity cost alone negates any perceived value and cannot be recovered later through additional investment. Invest in creating and maintaining the capabilities that are your company's strategic differentiators amongst the competition. The emphasis on new business building is a defining characteristic of digitally successful companies.  
 
 #### 1.1.6 Guiding Principals of Platform Product Architectures
 
@@ -119,7 +117,7 @@ Use of modern SDLC practices and infrastructure frameworks in the continuous int
   <p>_translation_</p>
   <p>(Every environment is like production)</p>
   <p>(Every detail of the desired state is documented)</p>
-  <p>(The "desired state" is part of or consumable by the source-code for the software-defined delivery of the platform )</p>
+  <p>(The "desired state" is, part of or consumable by, the source-code for the software-defined delivery of the platform)</p>
   <p>(Avoid monitoring only proxies of state wherever possible)</p>
   <p>(The platform architecture is based on resiliency, not just availability)</p>
   <p>(It is software-defined, employing sdlc practices, not merely automated)</p>
