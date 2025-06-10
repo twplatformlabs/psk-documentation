@@ -9,7 +9,7 @@
 ![bootstrap](https://img.shields.io/badge/document-EarlyDraft-yellow.svg?style=for-the-badge&logo=markdown)  
 
 #### 2.1.1 local setup  
-[local-platform-environment](https://github.com/twplatformlabs/local-platform-environment)  
+* [local-platform-environment](https://github.com/twplatformlabs/local-platform-environment)  
 
 #### 2.1.2 CircleCI executors and orbs
 
