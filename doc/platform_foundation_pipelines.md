@@ -32,16 +32,16 @@
 #### 2.2.2 Google Cloud Platform
 
 (_pending_)  
-psk-gcp-cloud-builders(https://github.com/twplatformlabs/psk)
-psk-gcp-iam-profiles(https://github.com/twplatformlabs/psk)
-psk-gpc-platform-vpc(https://github.com/twplatformlabs/psk)
+* [psk-gcp-cloud-builders](https://github.com/twplatformlabs/psk-gcp-cloud-builders) _in progress_
+* [psk-gcp-iam-profiles](https://github.com/twplatformlabs/psk-gcp-iam-profiles) _in progress_
+* [psk-gpc-platform-vpc](https://github.com/twplatformlabs/psk-gpc-platform-vpc) _in progress_
 
 #### 2.2.3 Microsoft Azure Cloud Computing Services
 
 (_pending_)  
 
 * build pipelines
-  * [psk-az-iam-profiles](https://github.com/twplatformlabs/psk-az-iam-profiles)  (review)
+  * [psk-az-iam-profiles](https://github.com/twplatformlabs/psk-az-iam-profiles) _in progress_
 
 <hr>  
 
