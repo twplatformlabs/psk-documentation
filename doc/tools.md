@@ -1,8 +1,6 @@
 <div align="center">
 	<p>
-		<img alt="Thoughtworks Logo" src="https://raw.githubusercontent.com/ThoughtWorks-DPS/static/master/thoughtworks_flamingo_wave.png?sanitize=true" width=200 />
-    <br />
-		<img alt="DPS Title" src="https://raw.githubusercontent.com/ThoughtWorks-DPS/static/master/EMPCPlatformStarterKitsImage.png?sanitize=true" width=350/>
+		<img alt="Thoughtworks Logo" src="https://raw.githubusercontent.com/twplatformlabs/static/master/psk_banner.png" width=500 />
 	</p>
   <h3>1.3 A Note on Tools</h3>
 </div>
@@ -16,42 +14,41 @@ Tools are not a strategic capability. TCO includes the opportunity cost of what 
 
 The statement, “It’s not about the tools” means only: No tool is going to solve for or remove the impact of your organizational challenges and culture.  
 
-Suitability to IaC lifecycle and a domain-bounded implementation is a prerequisite for all tools and technologies.
+Suitability to IaC lifecycle management and a domain-bounded implementation is a prerequisite for all tools and technologies.
 
 ### 1.3.1 General tool selection criteria
 
 * Use small, focused tools that are exceptional in their implementation and interoperate well, over monolithic solutions. (One measure of _exceptional_ being, is an architecture designed clearly to be user-centric, with a roadmap based on real feedback.)  
 
-* Use domain bounded tools and frameworks that can be implemented to enable low-friction changes to higher value alternatives as they become available. Domain-bounded implementation in this case refers to the degree of difficulty in changing the tool when a higher-value product comes along. Implement in such a way that the cost to change is relatively low and not a blocker to the adoption of alternative technologies.  
+* Use domain bounded tools and frameworks that can be implemented to enable low-friction changes to higher value alternatives as they become available. Domain-bounded implementation in this case refers to the degree of difficulty in changing the tool when a higher-value product comes along. Implement in such a way that the cost to change is relatively low and not itself a blocker to the adoption of sufficiently valuable alternative technologies.  
 
 * Prefer solutions offered by qualified SaaS providers over self-managed options, being painfully honest about the actual costs of ownership.  
 
 * Use or implement software that has an API.  
-* The API should be easy to use and include functional examples.  
+* The API should be easy to use and the documentation should include functional examples.  
 * The API should have all the functionality that the application provides.  
 * The API should be accessible by more than one language and platform.  
-* Coding around deficiencies in the product should be easier than recreating the product.  
+* Coding around deficiencies in the product should be much easier than recreating the product.  
 * All data stored in the product should be readable and writeable by other applications.  
 * For products that have authentication requirements, they should be able to authenticate and authorize from external, configurable sources. (In particular, they must integrate into the general AuthN/Z scheme of the overall platform, either natively or through custom integration.)
+* Do not self-manage software that requires bare metal servers.
 * Place a high value on the depth of community involvement and support.  
 
 ### 1.3.2 Tools and technologies used in Lab examples
 
 #### 1.3.2.1 Artifact stores
 
-There are several different types of artifact stores used in the development of a Engineering platform.  
+There are several different types of artifact stores used in the development of an Engineering platform.  
 
 **terraform state**  
 
-Examples use [terraform cloud](https://www.terraform.io). Access to a quality SaaS terraform state backend addresses a key infrastructure bootstrap challenge for fully software-defined lifecycle management. e.g., you do not need to bootstrap a state store.  
-
-Refer to vendor [documentation](https://www.terraform.io/docs/cloud/index.html) for detailed questions. 
+Examples use [terraform cloud](https://www.terraform.io). Access to a quality SaaS terraform state backend addresses a key infrastructure bootstrap challenge for fully software-defined lifecycle management. e.g., you do not need to bootstrap a state store. Refer to vendor [documentation](https://www.terraform.io/docs/cloud/index.html) for detailed questions.  
 
 **secrets management**
 
-You will see various secrets-management systems or tools used in the lab environments and working-code examples.  
+You may see various secrets-management systems or tools used in the lab environments and working-code examples.  
 
-Most examples make use of `1password`.  
+Most examples make use of `1Password` as the secure secrets store.  
 
 - [1password](https://1password.com/products/secrets/)
 
@@ -75,22 +72,25 @@ The only CircleCI ENV var defined within the context is OP_SERVICE_ACCOUNT_TOKEN
 
 At the start of any pipeline run, inject the credentials for all other pipeline activities or uses of secure config as needed.  
 
-**pipelines**
+**build-artifact stores**
+
+- [**github packages**](https://github.com/features/packages)  
+- [**dockerhub**](https://hub.docker.com)  
+
+
+#### 1.3.2.2 Pipeline orchestration
 
 You will see examples using various well-suited pipeline tools, though chiefly it will be circleci.  
 
 - [**circleci**](https://circleci.com)
 - [github actions](https://github.com/features/actions)
 
-**build-artifact stores**
+#### 1.3.2.3 Code analysis and reporting
 
-- [**github packages**](https://github.com/features/packages)  
-- [**dockerhub**](https://hub.docker.com)  
-
-**code analysis reporting**
-
-- [**codeclimate**](https://codeclimate.com)
+- [**codacy**](https://codacy.com)
 - [**snyk**](https://snyk.io)
+- [**trivy**](https://trivy.dev/latest/)
+- [**checkov**](https://www.checkov.io)
 
 <hr>  
 
