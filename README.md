@@ -18,12 +18,9 @@ The Thoughtworks EMPC Platform Starter Kits demonstrate software building blocks
 
 2.1 [Platform Development Resources](./doc/platform_development_resources.md)  
 2.2 [Foundation Pipelines](./doc/platform_foundation_pipelines.md)  
-2.3 [Customer Onboarding and Management APIs](./doc/platform_apis.md)  
-2.4 [Platform Services](./doc/platform_services.md)  
+2.3 [Platform Services](./doc/platform_services.md)  
 
-#### 3. The `Demo` Customer 
-
-(_pending_)   
+#### Join the [Discussion](https://github.com/orgs/twplatformlabs/discussions)
 
 ##### PSK Maintainers  
 

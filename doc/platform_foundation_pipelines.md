@@ -24,16 +24,25 @@
   * [psk-aws-control-plane-services](https://github.com/ThoughtWorks-DPS/psk-aws-control-plane-services)
   * [psk-aws-control-plane-extensions](https://github.com/ThoughtWorks-DPS/psk-aws-control-plane-extensions)
  
+ psk-platform-on-cluster-observability-demo
+
+ psk-aws-platform-eks-base-ghactions
+ psk-aws-platform-observability-base
+
+
 #### 2.2.2 Google Cloud Platform
 
 (_pending_)  
+psk-gcp-cloud-builders
+psk-gcp-iam-profiles
+psk-gpc-platform-vpc
 
 #### 2.2.3 Microsoft Azure Cloud Computing Services
 
 (_pending_)  
 
 * build pipelines
-  * [psk-az-iam-profiles](https://github.com/ThoughtWorks-DPS/psk-az-iam-profiles)
+  * [psk-az-iam-profiles](https://github.com/ThoughtWorks-DPS/psk-az-iam-profiles)  (review)
 
 <hr>  
 
