@@ -75,10 +75,8 @@ _somewhat out of date, to be refreshed_
 
 * [circlepipe](https://github.com/twplatformlabs/circlepipe)
 * [iam-credential-rotation](https://github.com/twplatformlabs/iam-credential-rotation)
-
-_deprecated_  
-* [lab-service-op-connect-server](https://github.com/twplatformlabs/lab-service-op-connect-server)
-* [opw](https://github.com/twplatformlabs/opw)
+* [lab-service-op-connect-server](https://github.com/twplatformlabs/lab-service-op-connect-server) _deprecated_ 
+* [opw](https://github.com/twplatformlabs/opw) _deprecated_ 
 
 <hr>  
 
