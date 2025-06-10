@@ -2,7 +2,7 @@
 	<p>
 		<img alt="Thoughtworks Logo" src="https://raw.githubusercontent.com/twplatformlabs/static/master/psk_banner.png" width=800 />
 	</p>
-	<h3>Documentation for the Open Source Resources within Thoughtworks Platofrm Labs Materials</h3>
+	<h3>Documentation for the Open Source Resources</h3>
 </div>
 <br />
 
