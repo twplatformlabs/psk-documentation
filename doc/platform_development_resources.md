@@ -73,6 +73,7 @@ _somewhat out of date, to be refreshed_
 
 #### 2.1.5 utilities
 
+* [jumppod](https://github.com/twplatformlabs/jumppod)
 * [circlepipe](https://github.com/twplatformlabs/circlepipe)
 * [iam-credential-rotation](https://github.com/twplatformlabs/iam-credential-rotation)
 * [lab-service-op-connect-server](https://github.com/twplatformlabs/lab-service-op-connect-server) _deprecated_ 
